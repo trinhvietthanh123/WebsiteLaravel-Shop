@@ -69,4 +69,15 @@ class CategoryProduct extends Controller
         Session::put('message','Xóa danh mục sản phẩm thành công');
         return Redirect::to('all-category');
     }
+
+//end admin page
+    public function the_loai($category_id){
+        $cate_product = DB::table('tbl_category_product')->where('category_status','1')->orderby('category_id','desc')->get();
+        $author = DB::table('tbl_author_product')->orderby('author_id','desc')->get();
+        $category_by_id= DB::table('tbl_product')->join('tbl_category_product','tbl_product.category_id','=',
+        'tbl_category_product.category_id')->where('tbl_product.category_id',$category_id)->get();
+        $cate_name = DB::table('tbl_category_product')->where('tbl_category_product.category_id',$category_id)->limit(1)->get();
+        return view('pages.show_product')->with('category',$cate_product)->with('author',$author)->with('category_by_id',$category_by_id)->with('cate_name',$cate_name);
+    }
+    
 }

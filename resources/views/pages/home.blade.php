@@ -8,7 +8,7 @@
 								<div class="single-products">
 									
 										<div class="productinfo text-center">
-											<img src="{{URL::to('public/upload/'.$prod->product_image)}}" alt="" />
+											<a href=""><img src="{{URL::to('public/upload/'.$prod->product_image)}}" alt="" /></a>
 										<h2>{{$prod->product_price}}</h2>
 											<p>{{$prod->product_name}}</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
@@ -41,7 +41,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="{{url('public/upload/'.$value->product_image)}}" alt="" />
+												<a href=""><img src="{{url('public/upload/'.$value->product_image)}}" alt="" /></a>
 												<h2>{{$value->product_price}}</h2>
 												<p>{{$value->product_name}}</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
@@ -65,7 +65,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="{{url('public/upload/'.$value->product_image)}}" alt="" />
+												<a href=""><img src="{{url('public/upload/'.$value->product_image)}}" alt="" /></a>
 												<h2>{{$value->product_price}}</h2>
 												<p>{{$value->product_name}}</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
@@ -87,7 +87,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="{{url('public/upload/'.$value->product_image)}}" alt="" />
+												<a href=""><img src="{{url('public/upload/'.$value->product_image)}}" alt="" /></a>
 												<h2>{{$value->product_price}}</h2>
 												<p>{{$value->product_name}}</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
@@ -115,7 +115,7 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="{{('public/Front-End/images/home/Sach2jpg.jpg')}}" alt="" />
+													<a href=""><img src="{{('public/Front-End/images/home/Sach2jpg.jpg')}}" alt="" /></a>
 													<h2>169.000đ</h2>
 													<p>Người trong muôn nghề</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
@@ -128,7 +128,7 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="{{('public/Front-End/images/home/tieuthuyet.jpg')}}"  alt="" />
+													<a href=""><img src="{{('public/Front-End/images/home/tieuthuyet.jpg')}}"  alt="" /></a>
 													<h2>$120.000đ</h2>
 													<p>Quân vương</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
@@ -141,7 +141,7 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="{{('public/Front-End/images/home/Ruoitrau.jpg')}}"  alt="" />
+													<a href=""><img src="{{('public/Front-End/images/home/Ruoitrau.jpg')}}"  alt="" /></a>
 													<h2>96.000đ</h2>
 													<p>Ruồi Trâu</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
@@ -156,7 +156,7 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="{{('public/Front-End/images/home/chipheo.jpg')}}" alt="" />
+													<a href=""><img src="{{('public/Front-End/images/home/chipheo.jpg')}}" alt="" /></a>
 													<h2>72.000đ</h2>
 													<p>Chí phèo</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
@@ -169,7 +169,7 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="{{('public/Front-End/images/home/khonkho.jpg')}}" alt="" />
+													<a href=""><img src="{{('public/Front-End/images/home/khonkho.jpg')}}" alt="" /></a>
 													<h2>120.000đ</h2>
 													<p>Những người khốn khổ</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
@@ -182,7 +182,7 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="{{('public/Front-End/images/home/thepda.jpg')}}" alt="" />
+													<a href=""><img src="{{('public/Front-End/images/home/thepda.jpg')}}" alt="" /></a>
 													<h2>92.900đ</h2>
 													<p>Thép đã tôi thế đấy</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>

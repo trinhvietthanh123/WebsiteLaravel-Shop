@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Home | E-Shopper</title>
+    <title>Home | B-Shopper</title>
     <link href="{{asset('public/Front-End/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('public/Front-End/css/font-awesome.min.css')}}" rel="stylesheet">
     <link href="{{asset('public/Front-End/css/prettyPhoto.css')}}" rel="stylesheet">
@@ -123,38 +123,41 @@
 						<div class="carousel-inner">
 							<div class="item active">
 								<div class="col-sm-6">
-									<h1><span>Ruồi Trâu</span></h1>
+									<a href=""><h1><span>Ruồi Trâu</span></h1>
+									</a>
 									<h2>96.000đ</h2>
 									<p>Truyện xoay quanh nhân vật trung tâm là chàng thanh niên Arthur - bí danh “Ruồi trâu”, một thanh niên hiền lành, thánh thiện, hiến dâng tất cả tình cảm riêng tư cho lý tưởng cách mạng. </p>
 									<button type="button" class="btn btn-default get">Xem ngay</button>
 								</div>
 								<div class="col-sm-6">
-									<img src="{{('public/Front-End/images/home/Ruoitrau.jpg')}}" class="girl img-responsive')}}" alt="" />
-									
+									<a href=""><img src="{{('public/Front-End/images/home/Ruoitrau.jpg')}}" class="girl img-responsive')}}" alt="" />
+									</a>
 								</div>
 							</div>
 							<div class="item">
 								<div class="col-sm-6">
-									<h1><span>Thép đã tôi thế đấy</span></h1>
+									<a href=""><h1><span>Thép đã tôi thế đấy</span></h1>
+									</a>
 									<h2>92.900đ</h2>
 									<p> Nhân vật Paven là một hình ảnh điển hình sâu sắc, thể hiện những phẩm chất chính trị, lòng trung thành sâu sắc của người thanh niên Xô Viết đối với Đảng, Tổ quốc, nhân dân. </p>
 									<button type="button" class="btn btn-default get">Xem ngay</button>
 								</div>
-								<div class="col-sm-6"><img src="{{('public/Front-End/images/home/thepda.jpg')}}" class="girl img-responsive')}}" alt="" />
-									
+									<a href=""><div class="col-sm-6"><img src="{{('public/Front-End/images/home/thepda.jpg')}}" class="girl img-responsive')}}" alt="" />
+									</a>
 								</div>
 							</div>
 							
 							<div class="item">
 								<div class="col-sm-6">
-									<h1><span>Những người khốn khổ</span></h1>
+									<a href=""><h1><span>Những người khốn khổ</span></h1>
+									</a>
 									<h2>120.000đ</h2>
 									<p>Những người khốn khổ là bộ truyện lớn nhất mà cũng là tác phẩm có giá trị nhất trong sự nghiệp văn chương của Victor Hugo. Ông đã suy nghĩ về tác phẩm này và viết nó trong ngót ba mươi năm. </p>
 									<button type="button" class="btn btn-default get">Xem ngay</button>
 								</div>
 								<div class="col-sm-6">
-									<img src="{{('public/Front-End/images/home/khonkho.jpg')}}" class="girl img-responsive')}}" alt="" />
-									
+									<a href=""><img src="{{('public/Front-End/images/home/khonkho.jpg')}}" class="girl img-responsive')}}" alt="" />
+									</a>
 								</div>
 							</div>
 							
