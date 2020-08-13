@@ -50,3 +50,6 @@ Route::get('/delete-product/{product_id}','Product@delete_product');
 Route::post('/update-product/{product_id}','Product@update_product');
 Route::get('/inactive-product/{product_id}','Product@inactive_product');
 Route::get('/active-product/{product_id}','Product@active_product');
+//Show product for category
+Route::get('/the-loai/{category_id}','CategoryProduct@the_loai');
+Route::get('/tac-gia/{author_id}','AuthorProduct@tac_gia');

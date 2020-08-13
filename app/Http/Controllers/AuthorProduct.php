@@ -60,5 +60,14 @@ class AuthorProduct extends Controller
             Session::put('message','Xóa sản phẩm thành công');
             return Redirect::to('all-author');
         }
+        //end admin page
+        public function tac_gia($author_id){
+            $cate_product = DB::table('tbl_category_product')->where('category_status','1')->orderby('category_id','desc')->get();
+            $author = DB::table('tbl_author_product')->orderby('author_id','desc')->get();
+            $author_by_id= DB::table('tbl_product')->join('tbl_author_product','tbl_product.author_id','=',
+            'tbl_author_product.author_id')->where('tbl_product.author_id',$author_id)->get();
+            $author_name = DB::table('tbl_author_product')->where('tbl_author_product.author_id',$author_id)->limit(1)->get();
+            return view('pages.show_author')->with('category',$cate_product)->with('author',$author)->with('author_by_id',$author_by_id)->with('author_name',$author_name);
+        }
 }
     
