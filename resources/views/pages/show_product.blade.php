@@ -10,7 +10,7 @@
 								<div class="single-products">
 									
 										<div class="productinfo text-center">
-											<img src="{{URL::to('public/upload/'.$prod->product_image)}}" alt="" />
+										<a href="{{url('/chi-tiet/'.$prod->product_id)}}"><img src="{{URL::to('public/upload/'.$prod->product_image)}}" alt="" /></a>
 										<h2>{{$prod->product_price}}</h2>
 											<p>{{$prod->product_name}}</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>

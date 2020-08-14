@@ -101,4 +101,14 @@ class Product extends Controller
         Session::put('message','Xóa sản phẩm thành công');
         return Redirect::to('all-product');
     }
+    //end admin page
+    public function detail($product_id){
+        $cate_product = DB::table('tbl_category_product')->where('category_status','1')->orderby('category_id','desc')->get();
+        $author = DB::table('tbl_author_product')->orderby('author_id','desc')->get();
+        $detail_product = DB::table('tbl_product')
+        ->join('tbl_category_product','tbl_category_product.category_id','=','tbl_product.category_id')
+        ->join('tbl_author_product','tbl_author_product.author_id','=','tbl_product.author_id')
+        ->where('tbl_product.product_id',$product_id)->get();
+        return view('pages.product_detail')->with('category',$cate_product)->with('author',$author)->with('detail_product',$detail_product);
+    }
 }
