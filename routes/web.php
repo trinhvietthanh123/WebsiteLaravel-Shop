@@ -17,6 +17,7 @@ Route::get('/','HomeController@index');
 Route::get('/trang-chu','HomeController@index');
 
 
+
 //Back-end
 Route::get('/admin','AdminController@index');
 Route::get('/dashboard','AdminController@show_dashboard');
@@ -53,3 +54,4 @@ Route::get('/active-product/{product_id}','Product@active_product');
 //Show product for category
 Route::get('/the-loai/{category_id}','CategoryProduct@the_loai');
 Route::get('/tac-gia/{author_id}','AuthorProduct@tac_gia');
+Route::get('/chi-tiet/{product_id}','Product@detail');

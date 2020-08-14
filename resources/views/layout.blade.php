@@ -130,7 +130,7 @@
 									<button type="button" class="btn btn-default get">Xem ngay</button>
 								</div>
 								<div class="col-sm-6">
-									<a href=""><img src="{{('public/Front-End/images/home/Ruoitrau.jpg')}}" class="girl img-responsive')}}" alt="" />
+									<a href="{{url('/chi-tiet/'.'3')}}"><img src="public/upload/Ruoitrau63.jpg" class="girl img-responsive')}}" alt="" />
 									</a>
 								</div>
 							</div>
@@ -149,14 +149,14 @@
 							
 							<div class="item">
 								<div class="col-sm-6">
-									<a href=""><h1><span>Những người khốn khổ</span></h1>
+									<a href="{{url('/chi-tiet/'.'6')}}"><h1><span>Những người khốn khổ</span></h1>
 									</a>
 									<h2>120.000đ</h2>
 									<p>Những người khốn khổ là bộ truyện lớn nhất mà cũng là tác phẩm có giá trị nhất trong sự nghiệp văn chương của Victor Hugo. Ông đã suy nghĩ về tác phẩm này và viết nó trong ngót ba mươi năm. </p>
 									<button type="button" class="btn btn-default get">Xem ngay</button>
 								</div>
 								<div class="col-sm-6">
-									<a href=""><img src="{{('public/Front-End/images/home/khonkho.jpg')}}" class="girl img-responsive')}}" alt="" />
+									<a href=""><img src="{{('public/upload/khonkho62.jpg')}}" class="girl img-responsive')}}" alt="" />
 									</a>
 								</div>
 							</div>
