@@ -55,3 +55,10 @@ Route::get('/active-product/{product_id}','Product@active_product');
 Route::get('/the-loai/{category_id}','CategoryProduct@the_loai');
 Route::get('/tac-gia/{author_id}','AuthorProduct@tac_gia');
 Route::get('/chi-tiet/{product_id}','Product@detail');
+//cart
+Route::post('/save-cart','CartController@save_cart');
+Route::get('/show-cart','CartController@show_cart');
+Route::get('/delete-to-cart/{rowID}','CartController@delete_cart');
+Route::post('/update-cart-quantity','CartController@update_cart');
+//Check-out
+Route::get('/login-checkout','CheckoutController@login_checkout');

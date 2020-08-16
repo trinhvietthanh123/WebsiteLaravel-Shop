@@ -13,7 +13,7 @@
     <link href="{{asset('public/Front-End/css/animate.css')}}" rel="stylesheet">
 	<link href="{{asset('public/Front-End/css/main.css')}}" rel="stylesheet">
 	<link href="{{asset('public/Front-End/css/responsive.css')}}" rel="stylesheet">
-	<link href="{{asset('public/Front-End/css/style.css')}}" rel="stylesheet">
+	{{-- <link href="{{asset('public/Front-End/css/style.css')}}" rel="stylesheet"> --}}
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -56,8 +56,8 @@
 					<div class="col-sm-8">
 						<div class="shop-menu pull-right">
 							<ul class="nav navbar-nav">
-								<li><a href="#"><i class="fa fa-user"></i> Tài khoản</a></li>
-								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
+							<li><a href="{{url('/login-checkout')}}"><i class="fa fa-user"></i> Tài khoản</a></li>
+							<li><a href="{{url('/show-cart')}}"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
 								<li><a href="{{url('/admin')}}"><i class="fa fa-lock"></i> Đăng nhập</a></li>
 							</ul>
 						</div>
@@ -127,7 +127,7 @@
 									</a>
 									<h2>96.000đ</h2>
 									<p>Truyện xoay quanh nhân vật trung tâm là chàng thanh niên Arthur - bí danh “Ruồi trâu”, một thanh niên hiền lành, thánh thiện, hiến dâng tất cả tình cảm riêng tư cho lý tưởng cách mạng. </p>
-									<button type="button" class="btn btn-default get">Xem ngay</button>
+									<button type="button" class="btn btn-default get"><a href="{{url('/chi-tiet/'.'3')}}">Xem ngay</a></button>
 								</div>
 								<div class="col-sm-6">
 									<a href="{{url('/chi-tiet/'.'3')}}"><img src="public/upload/Ruoitrau63.jpg" class="girl img-responsive')}}" alt="" />
@@ -140,9 +140,9 @@
 									</a>
 									<h2>92.900đ</h2>
 									<p> Nhân vật Paven là một hình ảnh điển hình sâu sắc, thể hiện những phẩm chất chính trị, lòng trung thành sâu sắc của người thanh niên Xô Viết đối với Đảng, Tổ quốc, nhân dân. </p>
-									<button type="button" class="btn btn-default get">Xem ngay</button>
+									<button type="button" class="btn btn-default get"><a href="{{url('/chi-tiet/'.'12')}}">Xem ngay</a></button>
 								</div>
-									<a href=""><div class="col-sm-6"><img src="{{('public/Front-End/images/home/thepda.jpg')}}" class="girl img-responsive')}}" alt="" />
+							<a href="{{url('/chi-tiet/'.'12')}}"><div class="col-sm-6"><img src="{{('public/Front-End/images/home/thepda.jpg')}}" class="girl img-responsive')}}" alt="" />
 									</a>
 								</div>
 							</div>
@@ -153,10 +153,10 @@
 									</a>
 									<h2>120.000đ</h2>
 									<p>Những người khốn khổ là bộ truyện lớn nhất mà cũng là tác phẩm có giá trị nhất trong sự nghiệp văn chương của Victor Hugo. Ông đã suy nghĩ về tác phẩm này và viết nó trong ngót ba mươi năm. </p>
-									<button type="button" class="btn btn-default get">Xem ngay</button>
+									<button type="button" class="btn btn-default get"><a href="{{url('/chi-tiet/'.'6')}}">Xem ngay</a></button>
 								</div>
 								<div class="col-sm-6">
-									<a href=""><img src="{{('public/upload/khonkho62.jpg')}}" class="girl img-responsive')}}" alt="" />
+									<a href="{{url('/chi-tiet/'.'6')}}"><img src="{{('public/upload/khonkho62.jpg')}}" class="girl img-responsive')}}" alt="" />
 									</a>
 								</div>
 							</div>

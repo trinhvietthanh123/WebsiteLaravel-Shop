@@ -9,7 +9,7 @@
 									
 										<div class="productinfo text-center">
 											<a href="{{url('/chi-tiet/'.$prod->product_id)}}"><img src="{{URL::to('public/upload/'.$prod->product_image)}}" alt="" /></a>
-										<h2>{{$prod->product_price}}</h2>
+										<h2>{{number_format($prod->product_price).'đ'}}</h2>
 											<p>{{$prod->product_name}}</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
 										</div>
@@ -41,8 +41,8 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<a href="{{url('/chi-tiet/'.$prod->product_id)}}"><img src="{{url('public/upload/'.$value->product_image)}}" alt="" /></a>
-												<h2>{{$value->product_price}}</h2>
+												<a href="{{url('/chi-tiet/'.$value->product_id)}}"><img src="{{url('public/upload/'.$value->product_image)}}" alt="" /></a>
+												<h2>{{number_format($value->product_price).'đ'}}</h2>
 												<p>{{$value->product_name}}</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
 											</div>
@@ -65,8 +65,8 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<a href="{{url('/chi-tiet/'.$prod->product_id)}}"><img src="{{url('public/upload/'.$value->product_image)}}" alt="" /></a>
-												<h2>{{$value->product_price}}</h2>
+												<a href="{{url('/chi-tiet/'.$value->product_id)}}"><img src="{{url('public/upload/'.$value->product_image)}}" alt="" /></a>
+												<h2>{{number_format($value->product_price).'đ'}}</h2>
 												<p>{{$value->product_name}}</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
 											</div>
@@ -87,7 +87,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<a href="{{url('/chi-tiet/'.$prod->product_id)}}"><img src="{{url('public/upload/'.$value->product_image)}}" alt="" /></a>
+												<a href="{{url('/chi-tiet/'.$value->product_id)}}"><img src="{{url('public/upload/'.$value->product_image)}}" alt="" /></a>
 												<h2>{{$value->product_price}}</h2>
 												<p>{{$value->product_name}}</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
@@ -128,10 +128,10 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<a href="{{url('/chi-tiet/'.'')}}"><img src="{{('public/Front-End/images/home/tieuthuyet.jpg')}}"  alt="" /></a>
-													<h2>$120.000đ</h2>
+													<a href="{{url('/chi-tiet/'.'11')}}"><img src="{{('public/Front-End/images/home/tieuthuyet.jpg')}}"  alt="" /></a>
+													<h2>120.000đ</h2>
 													<p>Quân vương</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
+													<a href="" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
 												</div>
 												
 											</div>
