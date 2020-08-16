@@ -14,24 +14,28 @@
         </div>
         <div class="col-sm-7">
             <div class="product-information"><!--/product-information-->
-                <img src="images/product-details/new.jpg" class="newarrival" alt="" />
+                
                 <h2>{{$value->product_name}}</h2>
                 <br/>
             <p>Web ID: {{$value->product_id}}</p>
-                <img src="images/product-details/rating.png" alt="" />
+               
+            <form action="{{url('/save-cart')}}" method="POST">
+                    {{ csrf_field() }}
                 <span>
-                    <span>{{$value->product_price}}</span>
+                    <span>{{number_format($value->product_price).'đ'}}</span>
                     <label>Số lượng:</label>
-                    <input type="number" min="1" max="10" value="1" />
-                    <button type="button" class="btn btn-fefault cart">
+                    <input name="qty" type="number" min="1" max="10" value="1" />
+                <input name="product_hidden" type="hidden"  value="{{$value->product_id}}"  />
+                    <button type="submit" class="btn btn-fefault cart">
                         <i class="fa fa-shopping-cart"></i>
                         Thêm vào giỏ hàng
                     </button>
                 </span>
+            </form>
                 <p><b>Trạng thái:</b> Còn hàng</p>
             <p><b>Thể loại:</b> {{$value->category_name}}</p>
                 <p><b>Tác giả:</b> {{$value->author_name}}</p>
-                <a href=""><img src="images/product-details/share.png" class="share img-responsive"  alt="" /></a>
+                
             </div><!--/product-information-->
         </div>
         @endforeach
