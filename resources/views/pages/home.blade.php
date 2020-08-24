@@ -240,7 +240,7 @@
 														{{ csrf_field() }}
 													<span>
 													
-														<input name="qty" type="number" value="1" />
+														<input name="qty" type="hidden" value="1" />
 													<input name="product_hidden" type="hidden"  value="4"  />
 														<button type="submit" class="btn btn-fefault cart">
 															<i class="fa fa-shopping-cart"></i>
