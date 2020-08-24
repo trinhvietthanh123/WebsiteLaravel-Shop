@@ -11,7 +11,18 @@
 											<a href="{{url('/chi-tiet/'.$prod->product_id)}}"><img src="{{URL::to('public/upload/'.$prod->product_image)}}" alt="" /></a>
 										<h2>{{number_format($prod->product_price).'đ'}}</h2>
 											<p>{{$prod->product_name}}</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
+											<form action="{{url('/save-cart')}}" method="POST">
+												{{ csrf_field() }}
+											<span>
+											
+												<input name="qty" type="hidden" value="1" />
+											<input name="product_hidden" type="hidden"  value="{{$prod->product_id}}"  />
+												<button type="submit" class="btn btn-fefault cart">
+													<i class="fa fa-shopping-cart"></i>
+													Thêm vào giỏ hàng
+												</button>
+											</span>
+											</form>
 										</div>
 										
 								</div>
@@ -44,7 +55,18 @@
 												<a href="{{url('/chi-tiet/'.$value->product_id)}}"><img src="{{url('public/upload/'.$value->product_image)}}" alt="" /></a>
 												<h2>{{number_format($value->product_price).'đ'}}</h2>
 												<p>{{$value->product_name}}</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
+												<form action="{{url('/save-cart')}}" method="POST">
+													{{ csrf_field() }}
+												<span>
+												
+													<input name="qty" type="hidden" value="1" />
+												<input name="product_hidden" type="hidden"  value="{{$value->product_id}}"  />
+													<button type="submit" class="btn btn-fefault cart">
+														<i class="fa fa-shopping-cart"></i>
+														Thêm vào giỏ hàng
+													</button>
+												</span>
+												</form>
 											</div>
 											
 										</div>
@@ -68,7 +90,18 @@
 												<a href="{{url('/chi-tiet/'.$value->product_id)}}"><img src="{{url('public/upload/'.$value->product_image)}}" alt="" /></a>
 												<h2>{{number_format($value->product_price).'đ'}}</h2>
 												<p>{{$value->product_name}}</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
+												<form action="{{url('/save-cart')}}" method="POST">
+													{{ csrf_field() }}
+												<span>
+												
+													<input name="qty" type="hidden" value="1" />
+												<input name="product_hidden" type="hidden"  value="{{$value->product_id}}"  />
+													<button type="submit" class="btn btn-fefault cart">
+														<i class="fa fa-shopping-cart"></i>
+														Thêm vào giỏ hàng
+													</button>
+												</span>
+												</form>
 											</div>
 											
 										</div>
@@ -90,7 +123,18 @@
 												<a href="{{url('/chi-tiet/'.$value->product_id)}}"><img src="{{url('public/upload/'.$value->product_image)}}" alt="" /></a>
 												<h2>{{$value->product_price}}</h2>
 												<p>{{$value->product_name}}</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
+												<form action="{{url('/save-cart')}}" method="POST">
+													{{ csrf_field() }}
+												<span>
+												
+													<input name="qty" type="number" value="1" />
+												<input name="product_hidden" type="hidden"  value="{{$value->product_id}}"  />
+													<button type="submit" class="btn btn-fefault cart">
+														<i class="fa fa-shopping-cart"></i>
+														Thêm vào giỏ hàng
+													</button>
+												</span>
+												</form>
 											</div>
 											
 										</div>
@@ -118,7 +162,18 @@
 													<a href="{{url('/chi-tiet/'.'7')}}"><img src="{{('public/Front-End/images/home/Sach2jpg.jpg')}}" alt="" /></a>
 													<h2>169.000đ</h2>
 													<p>Người trong muôn nghề</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
+													<form action="{{url('/save-cart')}}" method="POST">
+														{{ csrf_field() }}
+													<span>
+													
+														<input name="qty" type="hidden" value="1" />
+													<input name="product_hidden" type="hidden"  value="7"  />
+														<button type="submit" class="btn btn-fefault cart">
+															<i class="fa fa-shopping-cart"></i>
+															Thêm vào giỏ hàng
+														</button>
+													</span>
+													</form>
 												</div>
 												
 											</div>
@@ -131,7 +186,18 @@
 													<a href="{{url('/chi-tiet/'.'11')}}"><img src="{{('public/Front-End/images/home/tieuthuyet.jpg')}}"  alt="" /></a>
 													<h2>120.000đ</h2>
 													<p>Quân vương</p>
-													<a href="" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
+													<form action="{{url('/save-cart')}}" method="POST">
+														{{ csrf_field() }}
+													<span>
+													
+														<input name="qty" type="hidden" value="1" />
+													<input name="product_hidden" type="hidden"  value="11"  />
+														<button type="submit" class="btn btn-fefault cart">
+															<i class="fa fa-shopping-cart"></i>
+															Thêm vào giỏ hàng
+														</button>
+													</span>
+													</form>
 												</div>
 												
 											</div>
@@ -144,7 +210,18 @@
 													<a href="{{url('/chi-tiet/'.'3')}}"><img src="{{('public/Front-End/images/home/Ruoitrau.jpg')}}"  alt="" /></a>
 													<h2>96.000đ</h2>
 													<p>Ruồi Trâu</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
+													<form action="{{url('/save-cart')}}" method="POST">
+														{{ csrf_field() }}
+													<span>
+													
+														<input name="qty" type="hidden" value="1" />
+													<input name="product_hidden" type="hidden"  value="3"  />
+														<button type="submit" class="btn btn-fefault cart">
+															<i class="fa fa-shopping-cart"></i>
+															Thêm vào giỏ hàng
+														</button>
+													</span>
+													</form>
 												</div>
 												
 											</div>
@@ -159,7 +236,18 @@
 													<a href="{{url('/chi-tiet/'.'4')}}"><img src="{{('public/Front-End/images/home/chipheo.jpg')}}" alt="" /></a>
 													<h2>72.000đ</h2>
 													<p>Chí phèo</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
+													<form action="{{url('/save-cart')}}" method="POST">
+														{{ csrf_field() }}
+													<span>
+													
+														<input name="qty" type="number" value="1" />
+													<input name="product_hidden" type="hidden"  value="4"  />
+														<button type="submit" class="btn btn-fefault cart">
+															<i class="fa fa-shopping-cart"></i>
+															Thêm vào giỏ hàng
+														</button>
+													</span>
+													</form>
 												</div>
 												
 											</div>
@@ -172,25 +260,24 @@
 													<a href="{{url('/chi-tiet/'.'6')}}"><img src="{{('public/Front-End/images/home/khonkho.jpg')}}" alt="" /></a>
 													<h2>120.000đ</h2>
 													<p>Những người khốn khổ</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
+													<form action="{{url('/save-cart')}}" method="POST">
+														{{ csrf_field() }}
+													<span>
+													
+														<input name="qty" type="hidden" value="1" />
+													<input name="product_hidden" type="hidden"  value="6"  />
+														<button type="submit" class="btn btn-fefault cart">
+															<i class="fa fa-shopping-cart"></i>
+															Thêm vào giỏ hàng
+														</button>
+													</span>
+													</form>
 												</div>
 												
 											</div>
 										</div>
 									</div>
-									<div class="col-sm-4">
-										<div class="product-image-wrapper">
-											<div class="single-products">
-												<div class="productinfo text-center">
-													<a href=""><img src="{{('public/Front-End/images/home/thepda.jpg')}}" alt="" /></a>
-													<h2>92.900đ</h2>
-													<p>Thép đã tôi thế đấy</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
-												</div>
-												
-											</div>
-										</div>
-                                    </div>
+								
                                     
 								</div>
 							</div>
